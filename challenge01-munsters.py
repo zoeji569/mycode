@@ -10,6 +10,6 @@ munsters = {'endDate': 1966, 'startDate': 1964,\
 # ----------------------------------
 print("Names:", munsters['names'])
 print("EndDate:", munsters['endDate'])
-print("startDate:", munsters["startDate"])
+print("StartDate:", munsters["startDate"])
 munsters["episodes"] = 70
 print("episodes:", munsters['episodes'])
