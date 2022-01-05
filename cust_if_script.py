@@ -8,18 +8,19 @@ message = 'The letter grade associated with the score you entered is: '
 # wrap connection in a float() to accept decimals as numbers
 score = float(input("What is your numeric score?"))
 
-
-if score >= 90 and score <= 100:
-    message = message + 'A.'
-elif score >= 80 and score <= 89:
-    message = message + 'B.'
-elif score >= 70 and score <= 79:
-    message = message + 'C.'
-elif score >= 60 and score <= 69:
-    message = message + 'D.'
-elif score <= 59:
-    message = message + 'F.'
-else:
+if score >100 or score <0:
     message = 'The score you entered is invalid. Please enter number between 0 and 100.'
+
+elif score >= 90 and score <= 100:
+    message = message + 'A.'
+elif score >= 80:
+    message = message + 'B.'
+elif score >= 70:
+    message = message + 'C.'
+elif score >= 60:
+    message = message + 'D.'
+else:
+    message = message + 'F.'
+
 print(message)
 
