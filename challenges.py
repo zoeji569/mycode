@@ -39,4 +39,17 @@ numInRange(5)
 
 
 # 6.Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
-
+def countUpperCase_LowerCase(sentence=str):
+   chars=list(sentence)
+   upperCount = 0
+   lowerCount = 0
+   for char in chars:
+        if(char.isupper()==True):
+            upperCount +=1
+            print(upperCount)
+        if (char.islower()==True):
+            lowerCount +=1
+            print(lowerCount)
+   print(f"No. of Upper case characters : {upperCount}")
+   print(f"No. of Lower case Characters : {lowerCount}")
+countUpperCase_LowerCase("The quick Brow Fox")
