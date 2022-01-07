@@ -43,10 +43,10 @@ def countUpperCase_LowerCase(sentence=str):
    upperCount = 0
    lowerCount = 0
    for char in sentence:
-        if(char.isupper()==True):
+        if(char.isupper()):
             upperCount +=1
             print(upperCount)
-        if (char.islower()==True):
+        if (char.islower()):
             lowerCount +=1
             print(lowerCount)
    print(f"No. of Upper case characters : {upperCount}")
