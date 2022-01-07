@@ -42,7 +42,7 @@ numInRange(5)
 def countUpperCase_LowerCase(sentence=str):
    upperCount = 0
    lowerCount = 0
-   for char in chars:
+   for char in sentence:
         if(char.isupper()==True):
             upperCount +=1
             print(upperCount)
